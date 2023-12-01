@@ -7,6 +7,7 @@ from fastapi.openapi.docs import (
 
 from .token import token_router
 from .user import user_router
+from .article import article_router
 from settings import settings
 
 
@@ -17,6 +18,7 @@ def routers_init(app: FastAPI):
 
     app.include_router(token_router)
     app.include_router(user_router)
+    app.include_router(article_router)
 
 
 def _custom_swagger_ui(app: FastAPI):

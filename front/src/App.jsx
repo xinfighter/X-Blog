@@ -6,13 +6,13 @@ import store from './store'
 
 const App = () => {
   return (
-    <AntdProvider>
-      <ReduxProvider store={store}>
+    <ReduxProvider store={store}>
+      <AntdProvider>
         <BrowserRouter basename="/">
           <Routes />
         </BrowserRouter>
-      </ReduxProvider>
-    </AntdProvider>
+      </AntdProvider>
+    </ReduxProvider>
   )
 }
 
