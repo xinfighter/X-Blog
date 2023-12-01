@@ -1,17 +1,11 @@
 import { useRoutes } from 'react-router-dom'
-import HomePage from '@/views/Home'
-import Index from '@/views/Index'
+import MainLayout from '@/layouts/MainLayout'
 
 const router = [
   {
     path: '/',
-    element: <Index />,
-    children: [
-      {
-        path: 'home',
-        element: <HomePage />
-      }
-    ]
+    element: <MainLayout />,
+    children: [{}]
   }
 ]
 
