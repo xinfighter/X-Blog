@@ -1,16 +1,15 @@
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { ConfigProvider, Switch } from 'antd'
+import IconFont from '@/components/IconFont.jsx'
 import { setTheme } from '@/store/features/themeSlice.js'
-import { CheckOutlined, CloseOutlined } from '@ant-design/icons'
 
 const ThemeSwitch = () => {
   const dispatch = useDispatch()
-  const dark = useSelector((state) => state.theme.dark)
-  console.log(dark)
 
   const handleChange = () => {
     dispatch(setTheme())
   }
+
   return (
     <ConfigProvider
       theme={{
@@ -23,13 +22,13 @@ const ThemeSwitch = () => {
     >
       <Switch
         onChange={handleChange}
-        checkedChildren={<CheckOutlined />}
-        unCheckedChildren={<CloseOutlined />}
+        checkedChildren={<IconFont type="icon-dark" />}
+        unCheckedChildren={<IconFont type="icon-light" />}
         style={{
-          backgroundColor: dark ? '#1c1b21' : '#eff0f3',
+          backgroundColor: '#65758529',
           borderWidth: '1px',
           borderStyle: 'solid',
-          borderColor: dark ? '#3c3f44' : '#c2c2c4'
+          borderColor: '#3c3f44'
         }}
       />
     </ConfigProvider>

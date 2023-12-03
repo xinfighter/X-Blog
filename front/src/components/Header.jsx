@@ -1,6 +1,7 @@
-import { Avatar, Button, Col, Divider, Row, Space, Typography } from 'antd'
+import { Button, Col, Divider, Row, Space, Typography } from 'antd'
 import ThemeSwitch from '@/components/ThemeSwitch.jsx'
-import { GithubFilled, UserOutlined } from '@ant-design/icons'
+import UserButton from '@/components/UserButton.jsx'
+import { GithubFilled } from '@ant-design/icons'
 
 const Header = () => {
   return (
@@ -15,8 +16,14 @@ const Header = () => {
         <Space>
           <ThemeSwitch />
           <Divider type="vertical" />
-          <Button shape="circle" icon={<GithubFilled />} />
-          <Avatar icon={<UserOutlined />} />
+          <Button
+            type="text"
+            shape="circle"
+            icon={<GithubFilled style={{ fontSize: '22px' }} />}
+            href="https://github.com/xinfighter/X-Blog"
+            target="_blank"
+          />
+          <UserButton />
         </Space>
       </Col>
     </Row>

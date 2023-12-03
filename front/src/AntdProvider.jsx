@@ -7,21 +7,37 @@ import zhCN from 'antd/locale/zh_CN'
 // dayjs.locale('zh-cn');
 
 const lightTheme = {
-  token: {},
+  token: {
+    colorPrimary: '#3451b2',
+    colorTextBase: '#3c3c43',
+    colorBgBase: '#ffffff'
+  },
   components: {
     Layout: {
       headerBg: '#ffffff',
       headerPadding: '0'
+    },
+    Divider: {
+      colorSplit: '#e2e2e3',
+      colorText: '#e2e2e3'
     }
   }
 }
 
 const darkTheme = {
-  token: {},
+  token: {
+    colorPrimary: '#9499ff',
+    colorTextBase: '#fffff5db',
+    colorBgBase: '#1b1b1f'
+  },
   components: {
     Layout: {
       headerBg: '#1b1b1f',
       headerPadding: '0'
+    },
+    Divider: {
+      colorSplit: '#e2e2e3',
+      colorText: '#e2e2e3'
     }
   }
 }
