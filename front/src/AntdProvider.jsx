@@ -15,7 +15,8 @@ const lightTheme = {
   components: {
     Layout: {
       headerBg: '#ffffff',
-      headerPadding: '0'
+      headerPadding: '0',
+      bodyBg: '#ffffff'
     },
     Divider: {
       colorSplit: '#e2e2e3',
@@ -33,7 +34,8 @@ const darkTheme = {
   components: {
     Layout: {
       headerBg: '#1b1b1f',
-      headerPadding: '0'
+      headerPadding: '0',
+      bodyBg: '#1b1b1f'
     },
     Divider: {
       colorSplit: '#e2e2e3',
